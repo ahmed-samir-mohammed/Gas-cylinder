@@ -1,0 +1,154 @@
+/* Important Links */
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+// Vars
+$fontFamily: 'Cairo', sans-serif;
+$mainColor: #f5730a;
+$whiteColor: white;
+$transition: all .3s ease-in-out;
+
+body {
+  height: 9000px;
+}
+/* Start Header */
+header {
+  background-image: url('../img/back.png');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* Start NavBar */
+  .navbar {
+    font-family: $fontFamily;
+    .navbar-brand {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        &:not(:last-of-type) {
+          margin-right: 10px;
+          transition: $transition;
+          border-bottom: 2px solid $mainColor;
+          &:hover {
+            border-bottom: 2px solid $whiteColor;
+          }
+        }
+        .nav-link {
+          color: $whiteColor
+        }
+        .download {
+          background-color: $whiteColor;
+          border: 1px solid $whiteColor;
+          color: $mainColor;
+          border-radius: 50px;
+          padding: 7px 20px;
+          transition: $transition;
+          &:hover {
+            background-color: $mainColor;
+            color: $whiteColor;
+          }
+        }
+      }
+    }
+  }
+  /* End NavBar */
+  /* Start Home */
+  .home {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .home-heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $whiteColor;
+      font-family: $fontFamily;
+      padding-left: 70px;
+      h1 {
+        font-size: 4em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+      .info_down {
+        
+        button {
+          border: 1px solid #fff;
+          transition: $transition;
+          border-radius: 50px;
+          padding: 7px 30px;
+          text-transform: capitalize;
+          font-size: 20px;
+          margin-right: 20px;
+          cursor: pointer;
+          &:first-of-type {
+            background-color: $whiteColor;
+            color: $mainColor;
+            &:hover {
+              background-color: $mainColor;
+              color: $whiteColor
+            }
+          }
+          &:last-of-type {
+            background-color: $mainColor;
+            color: $whiteColor;
+            &:hover {
+              background-color: $whiteColor;
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+    img {
+      width: 60%;
+      margin-top: 50px
+    }
+  }
+}
+/* Start End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+[data-scroll] {
+  transition: all 1s;
+}
+
+[data-scroll='in'] {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+[data-scroll='out'] {
+  opacity: 0;
+  transform: translateY(200px)
+}
+*/
+
+
